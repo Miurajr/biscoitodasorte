@@ -17,6 +17,12 @@ var phrases = [
 //Events
 btnMain.addEventListener('click', randomPhrase);
 btnAgain.addEventListener('click', randomPhrase);
+document.addEventListener("keypress", function(e){
+
+	if(e.key === "Enter")
+	btnMain.click();
+
+});
 
   //functions
   function randomPhrase() {
